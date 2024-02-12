@@ -5,7 +5,7 @@ FuzionLaunch is a launcher for apps entirely based around plugins. At its core, 
 ## Installation
 
 1. Clone the repository.
-2. If you are on Windows, run the .bat file. If you are on Linux or macOS, run the .sh file.
+2. If you are on Windows, run the Fuzion.bat file. If you are on Linux or macOS, run the Fuzion file.
 
 ## Plugins
 
