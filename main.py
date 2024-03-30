@@ -43,4 +43,5 @@ while True:
     for plugin in main_menu:
         if plugin.name == selected:
             plugin.selected()
+            input("press enter to return to Fuzion...")
             break
