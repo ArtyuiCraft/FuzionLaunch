@@ -9,7 +9,7 @@ FuzionLaunch is a launcher for apps entirely based around plugins. At its core, 
 
 ## Plugins
 
-Plugins can be installed in the `plugins` folder that is located at `~/.config/fuzion/plugins/` plugins that are prefixed with a underscore are seen as libraries and are not loaded on start.
+Plugins can be installed in the `plugins` folder that is located at `~/.config/fuzion/plugins/` Plugins that are prefixed with a underscore are seen as libraries and are not loaded on start.
 
 ### Plugin Creation
 
@@ -56,10 +56,10 @@ def main():
 
 ### uploading a plugin to FuzionPlug
 
-to upload a plugin to [FuzionPlug](https://github.com/artyuiCraft/fuzionplug) you just need to add your plugin in a pull request and i will add it if it follows the plugin guidelines
+to upload a plugin to [FuzionPlug](https://github.com/artyuiCraft/fuzionplug) you just need to add your plugin in a pull request and I will add it if it follows the plugin guidelines
 
 #### plugin guidelines
 1. no nsfw content.
 2. should be a plugin for FuzionLaunch and not a plugin for another program.
 3. plugins should not perform any actions that compromise system security or violate user privacy.
-4. it can be anything from a game to just launching a app but nothing that does something against the rules.
+4. it can be anything from a game to just launching an app but nothing that does something against the rules.
