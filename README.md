@@ -32,11 +32,34 @@ pluglib.menu(
     func   # The code that needs to be run when selected; must be callable
 )
 ```
+
+#### extra info for plugin creation
+if you want to create another menu inside of you app then you can use my FZFmenus plugin you can import it like this:
+```python
+import _fzfmenus
+```
+and use it as followed:
+```python
+import _fzfmenus as fzf
+
+def menu():
+  options = ["do this","exit","something"]
+  chosen = fzf.menu()
+  if chosen == "exit":
+    exit
+  else:
+    menu()
+
+def main():
+  return pluglib.menu("FZFmenus test", menu)
+```
+
 ### uploading a plugin to FuzionPlug
+
 to upload a plugin to [FuzionPlug](https://github.com/artyuiCraft/fuzionplug) you just need to add your plugin in a pull request and i will add it if it follows the plugin guidelines
 
 #### plugin guidelines
 1. no nsfw content.
 2. should be a plugin for FuzionLaunch and not a plugin for another program.
-3. no plugin that hacks the system or hacks it.
+3. plugins should not perform any actions that compromise system security or violate user privacy.
 4. it can be anything from a game to just launching a app but nothing that does something against the rules.
