@@ -9,7 +9,7 @@ FuzionLaunch is a launcher for apps entirely based around plugins. At its core, 
 
 ## Plugins
 
-Plugins can be installed in the `plugins` folder that is located at `~/.config/fuzion/plugins/`.
+Plugins can be installed in the `plugins` folder that is located at `~/.config/fuzion/plugins/` plugins that are prefixed with a underscore are seen as libraries and are not loaded on start.
 
 ### Plugin Creation
 
