@@ -1,6 +1,6 @@
 # FuzionLaunch
 
-FuzionLaunch is a simple terminal launcher for apps entirely based around plugins. At its core, it's just a menu that loads menus/apps (~~it uses fzf~~ it now uses simple_term_menu for menus).
+FuzionLaunch is a simple terminal launcher for apps entirely based around plugins. At its core, it's just a menu that loads menus/apps (~~it uses fzf for menus~~ it now uses simple_term_menu for menus).
 
 ## Installation
 
@@ -35,7 +35,7 @@ pluglib.menu(
 ```
 
 #### extra info for plugin creation
-if you want to create another menu inside of you app then you can use my FZFmenus plugin you can import it like this:
+if you want to create another menu inside of you app then you can use my menus plugin you can import it like this (needs to be installed with [FuzionPlug](https://github.com/artyuiCraft/fuzionplug)):
 ```python
 import _menus
 ```
