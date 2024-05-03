@@ -1,11 +1,12 @@
 # FuzionLaunch
 
-FuzionLaunch is a launcher for apps entirely based around plugins. At its core, it's just a menu that loads menus/apps (it uses fzf for menus).
+FuzionLaunch is a simple terminal launcher for apps entirely based around plugins. At its core, it's just a menu that loads menus/apps (~~it uses fzf~~ it now uses simple_term_menu for menus).
 
 ## Installation
 
 1. Clone the repository.
-2. If you are on Windows, run the Fuzion.bat file. If you are on Linux or macOS, run the Fuzion file.
+2. install the simple_term_menu package using the following command: pip install simple_term_menu
+3. If you are on Windows, run the Fuzion.bat file. If you are on Linux or macOS, run the Fuzion file.
 
 ## Plugins
 
@@ -18,7 +19,7 @@ To create a plugin, follow these steps:
 1. Import the plugin library:
 
 ```python
-import plugins.pluglib as pluglib
+import pluglib
 ```
 2. Create the main function:
 ```python
@@ -36,22 +37,22 @@ pluglib.menu(
 #### extra info for plugin creation
 if you want to create another menu inside of you app then you can use my FZFmenus plugin you can import it like this:
 ```python
-import _fzfmenus
+import _menus
 ```
 and use it as followed:
 ```python
-import _fzfmenus as fzf
+import _menus as menus
 
 def menu():
   options = ["do this","exit","something"]
-  chosen = fzf.menu()
+  chosen = menus.menu()
   if chosen == "exit":
     exit
   else:
     menu()
 
 def main():
-  return pluglib.menu("FZFmenus test", menu)
+  return pluglib.menu("menus test", menu)
 ```
 
 ### uploading a plugin to FuzionPlug

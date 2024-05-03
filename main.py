@@ -1,4 +1,4 @@
-import fzfmenus
+import menus
 import os
 import importlib.util
 
@@ -37,7 +37,7 @@ for plugin in discover_plugins(get_plugin_folder()):
 main_menu_names = [i.name for i in main_menu]
 main_menu_names.append("exit")
 while True:
-    selected = fzfmenus.menu(main_menu_names)
+    selected = menus.menu(main_menu_names)
     if selected == "exit":
         break
     for plugin in main_menu:
